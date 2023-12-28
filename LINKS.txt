@@ -1,0 +1,21 @@
+Pygame Tutorial #1 - Basic Movement and Key Presses:
+https://www.youtube.com/watch?v=i6xMBig-pP4&list=PLzMcBGfZo4-lp3jAExUCewBfMx3UZFkh5
+
+
+Learning Pygame by making Pong:
+https://www.youtube.com/watch?v=Qf3-aDXG8q4&t=1537s
+
+PART 2:
+https://www.youtube.com/watch?v=E4Ih9mpn5tk&t=584s
+
+
+
+Python / Pygame tutorial: Collisions between static and moving objects:
+https://www.youtube.com/watch?v=1_H7InPMjaY&t=9s
+
+
+HOW TO PLAY MUSIC IN PYGAME:
+https://www.youtube.com/watch?v=1notLAqgWSE
+
+background music by D.E.N.I.S
+https://www.youtube.com/watch?v=Qj6Hs6Xc-KU
