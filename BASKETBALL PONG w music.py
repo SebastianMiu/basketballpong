@@ -17,6 +17,7 @@ def Game():
     screen=pygame.display.set_mode((WIDTH, HEIGHT))
     #background set
 
+    pygame.font.init()
     background=pygame.image.load("background.jpg")
     #screen.blit(background, (0,0))
 
@@ -44,11 +45,53 @@ def Game():
     vel2=1.6
     scoroppo=0
 
-    #main game loop
+    
     run=True
+    runmenu=True
+
+
+
+
+    
+    #MENIU
+    while runmenu:
+        
+        screen.fill((70, 147, 225))
+        
+        start=pygame.draw.rect(screen, (204, 85, 0), (270, 160, 220, 60))
+
+        
+        text=pygame.font.SysFont('Times New Roman', 42)
+        text_write= text.render('START', False, (255,255,255))
+        screen.blit(text_write, (320, 168))
+
+        TITLE=pygame.font.SysFont('Times New Roman', 50)
+        TITLE_write= TITLE.render('BASKETBALL_PONG', False, (0,0,225))
+        screen.blit(TITLE_write, (135, 50))
+        
+        cursor=pygame.mouse.get_pos()
+        if start.collidepoint(cursor):
+            if pygame.mouse.get_pressed()[0] == 1:
+                runmenu = False
+
+        #quit game
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+                runmenu = False
+
+        pygame.display.update()
+
+
+
+
+
+
+    #main game loop
+    
     while run:
         #delay ca sa mearga mingea mai incet; altfel o ia braila
-        pygame.time.delay(4)
+        pygame.time.delay(3)
         
         #background
         screen.fill((70, 147, 229))
@@ -129,7 +172,15 @@ def Game():
             scoroppo+=1        #ASTA E VARIABILA IN CARE SE ADUNA PUNCTAJUL OPONENTULUI
             print("OPPO: ", scoroppo)
 
-            
+        ##AFISARE SCOR
+        scorplayer=pygame.font.SysFont('Times New Roman', 20)
+        scorplayer_write=scorplayer.render(str(scorplay), False, (255,255,255))
+        screen.blit(scorplayer_write, (300, 50))
+
+        scoropponent=pygame.font.SysFont('Times New Roman', 20)
+        scoropponent_write=scoropponent.render(str(scoroppo), False, (255,255,255))
+        screen.blit(scoropponent_write, (450, 50))
+                
         #quit game
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
