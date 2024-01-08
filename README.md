@@ -3,12 +3,14 @@ PONG GAME
 
 github: https://github.com/SebastianMiu/basketballpong/tree/main-3
 
-INSTRUCTIUNI:
+DESCRIERE: joc clasic de PONG realizat in python utilizand pygame.
 
+INSTRUCTIUNI:
 1. Descarcati fisierele
 2. IMPORTANT: imaginile si fisierul .mp3 trebuie sa fie in acelasi folder cu fisierul .py
 4. Pentru a rula jocul este necesar sa instalati pygame
 5. Rulati fisierul "BASKETBALL PONG w music.py"
+6. Folositi tastele W si S pentru a misca paleta
 
 Miu Sebastian-Marian a facut loop-ul principal al jocului, cu tot ceea ce implica acesta (background, miscarea obiectelor, coliziuni etc.).
 Turbaceanu Ovidiu-Nicolae a realizat loop-ul meniului de start (cu buton) si tabela de scor afisata pe ecran in timpul jocului.
